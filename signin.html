@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+     body{
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        overflow: hidden;
+background:url("images/wallpaper\ login.jpg");
+font-family: Outfit;
+color: #243a6f;
+    }
+    .center{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 400px;
+    }
+    .center h1{
+        color:#243a6f;
+        font-family: Outfit, 'Times New Roman', Times, serif;
+        text-align: center;
+    }
+h2{
+color:#243a6f;
+text-align: center;
+ font-family: sans-serif;
+}
+.center form{
+padding: 0 40px;
+box-sizing: border-box;
+}
+.input-values{
+color:#c959bf;
+width: 200px;
+height: 30px;
+padding: 0 5px;
+flex-direction: row-reverse;
+margin: auto;
+display: flex;
+font-size: 16px;
+}
+form .text-field{
+position: relative;
+border-bottom: 2px solid #adadad;
+margin:30px 0;
+}
+.text-field input{
+width: 100%;
+padding: 0 5px;
+height: 40px;
+font-size: 16px;
+border: none;
+background: none;
+outline: none;
+}
+.text-field label{
+position: absolute;
+top: 50%;
+left: 5px;
+color: #243a6f;
+transform: translateY(-50%);
+font-size: 16px;
+pointer-events: none;
+}
+.text-field span::before{
+content: '';
+position: absolute;
+top: 40px;
+left: 0;
+width: 100%;
+height: 2px;
+background:#243a6f ;
+transition: .5s;
+}
+.text-field input:focus~label,
+.text-field input:valid~label{
+top:-5px;
+color:#243a6f;
+}
+.text-field input:focus ~ span::before,
+.text-field input:valid ~ span::before{
+width: 100%;
+}
+.pass{
+margin: -5px 0 20px 5px;
+color: #243a6f;
+cursor: pointer;
+}
+.pass:hover{
+text-decoration: underline;
+}
+.button{
+width: 100%;
+height: 50px;
+border: 1px solid;
+border-radius: 25px;
+font-size: 18px;
+color: #e9f4fb;
+font-weight: 700;
+cursor: pointer;
+outline: none;
+background-color:grey;
+}
+input  [type="submit"]:hover{
+border-color:#2691d9 ;
+transition: .5s;
+}
+.hidden{
+display: none;
+}
+.signup-link{
+margin:30px 0;
+text-align:center;
+font-size: 16px;
+color:#666666;
+}
+.signup-link a{
+color: #2691d9;
+text-decoration: none;
+}
+.signup-link a:hover{
+text-decoration: underline;
+}
+</style>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in page</title>
+    <script src="login.js"></script>
+</head>
+<body>
+    <div class="center">
+    <h1>Forska</h1>
+        <h2>Create account</h2>
+        <form method="post">
+            <div class="text-field">
+    <input type="text" id="username" required/>
+    <span></span>
+    <label>Username</label>
+    </div>
+    <div class="text-field">
+        <input type="email" id="email" required/>
+        <span></span>
+        <label>Email Id</label>
+        </div>
+    <div class="text-field"> 
+          <input type="password" id="password" required/>
+        <span></span>
+        <label > Set Password</label>
+       </div>
+    <input  class="button"type="submit" value="Sign in" onclick="validate()">
+    <div  class="signup-link"> Already have an account?     <a href="login.html" class="form-link">  Login</a></div>
+    </form>
+    </form>
+    </div>
+    </body>
+    </html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  <!-- Box icons -->
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <!-- Custom StyleSheet -->
+  <link rel="stylesheet" href="style.css" />
+    <title>Payment Method</title>
+</head>
+<body><link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <header id="home" class="header">
+    <nav class="nav">
+        <div class="navigation container">
+          <div class="logo">
+            <h1>Forska</h1>
+          </div>
+              <div class="menu">
+            <div class="top-nav">
+              <div class="logo">
+                <h1>Forska</h1>
+              </div>
+              <div class="close">
+                <i class="bx bx-x"></i>
+              </div>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                  <a href="#home" class="nav-link scroll-link">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="product.html" class="nav-link">Products</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#about" class="nav-link scroll-link">About</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#contact" class="nav-link scroll-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#account" class="nav-link scroll-link ">Account</a>
+                </li>
+                <li class="nav-item">
+                  <a href="cart.html" class="nav-link icon"><i class='bx bxs-shopping-bag'></i></a>
+                </li>
+              </ul>
+            </div>
+            <a href="cart.html" class="cart-icon">
+                <i class='bx bxs-shopping-bag'></i></a>
+                <div class="hamburger">
+                  <i class='bx bx-menu'></i>
+                </div>
+                  </div>
+                  </nav>
+                  <section class="section all-products" id="products">
+                    <div class="top container">
+                     <div class="payment-center">
+                        <h1>Select your Payment Method</h1>
+                        <div class="payment-input">
+                           <input style="margin-bottom: 35px;" type="radio" id="upi-apps" name="payment" value="upi"><label for="upi-apps">Other UPI Apps</label><br/>
+                           <input style="margin-bottom: 35px;" type="radio" id="debitcard" name="payment" value="cards"><label for="debitcard">Add Debit / Credit / ATM Card</label><br/>
+                           <input style="margin-bottom: 35px;" type="radio" id="netbanking" name="payment" value="net"><label for="netbanking">Net Banking</label><br/>
+                           <input style="margin-bottom: 35px;" type="radio" id="cod" name="payment" value="cash"><label for="cod">Cash On Delivery</label><br/>
+                           <input style="margin-bottom: 35px;" type="radio" id="blockchain" name="payment" value="bpayment"><label for="blockchain">Blockchain Payment</label>
+                         </div>
+                        <div>        
+                           <a href="confirmationpg.html">
+                          <button class="submit-btn" type="submit">Continue</button></a>
+                     </div>
+                   </div>
+                  </div>
+                </section>
+          </header>
+        <main>
+        
+        </main>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+        <!-- Custom Script -->
+        <script src="index.js"></script>
+</body>
+</html>
